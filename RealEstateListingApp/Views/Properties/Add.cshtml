@@ -1,0 +1,50 @@
+﻿@model RealEstateListingApp.Models.AddPropertyViewModel
+@{
+}
+<div class="row">
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+       <div class="card-body">
+        <h4 class="card-title">Add Property</h4>
+   <form class="forms-sample" method="post" asp-action="Add">
+    <div class="mb-3">
+        <label asp-for="PropertyType" class="form-label">Property Type</label>
+        <input type="text" class="form-control" asp-for="PropertyType">
+    </div>
+    <div class="mb-3">
+        <label asp-for="Address" class="form-label"></label>
+        <input type="text" class="form-control" asp-for="Address">
+    </div>
+    <div class="mb-3">
+        <label asp-for="Price" class="form-label"></label>
+        <input type="text" class="form-control" asp-for="Price">
+    </div>
+        <div class="mb-3">
+        <label asp-for="Description" class="form-label"></label>
+        <input type="text" class="form-control" asp-for="Description">
+    </div>
+    <div class="mb-3">
+        <label asp-for="NumberOfBedrooms" class="form-label">Number Of Bedrooms</label>
+        <input type="number" class="form-control" asp-for="NumberOfBedrooms">
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="NumberOfBathrooms" class="form-label">Number Of Bathrooms</label>
+        <input type="number" class="form-control" asp-for="NumberOfBathrooms">
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="SquareFootage" class="form-label">Square Foot</label>
+        <input type="text" class="form-control" asp-for="SquareFootage">
+    </div>
+    <div class="mb-3">
+        <label asp-for="ListingDate" class="form-label">Listing Date</label>
+        <input type="date" class="form-control" asp-for="ListingDate">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+        </div>
+    </div>
+</div>
+</div>
